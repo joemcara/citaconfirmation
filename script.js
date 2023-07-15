@@ -1,7 +1,7 @@
 document.getElementById("btnRedirect").addEventListener("click", function() {
 
     const newP = document.createElement('p');
-    newP.innerText = 'Sabia que dirias que si vistase guapa que vamos a loquear';
+    newP.innerText = 'Sabia que dirias que si, vistase guapa que vamos a loquear';
     document.getElementById('action2').appendChild(newP)
 
     const newh2 = document.createElement('h5');
@@ -16,11 +16,9 @@ document.getElementById("btnRedirect").addEventListener("click", function() {
     const newbtn = document.createElement('button');
     newbtn.innerText = 'Ir a la musica <3'
     newbtn.addEventListener('click',function(){
-        window.location.href = "https://www.youtube.com/watch?v=trUZwHvMflU";
+        window.open("https://www.youtube.com/watch?v=trUZwHvMflU", '_blank');
     })
     document.getElementById('action').appendChild(newbtn)
     document.getElementById("btnRedirect").disabled = true
     document.getElementById('btnRedirect').innerText = 'Es una cita :D'
 });
-
-
